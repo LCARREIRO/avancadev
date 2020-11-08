@@ -1,5 +1,7 @@
 # avancadev
 
+Comunicação entre serviços utilizando Go e RabbitMQ:
+
 ## Cupom inválido 
 
 ![Invalid](https://github.com/LCARREIRO/avancadev/blob/habbit-mq/images/2-Invalid_coupon.png)
