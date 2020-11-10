@@ -11,4 +11,19 @@ services:
       RABBITMQ_DEFAULT_VHOST: "/"
     ports:
       - "15672:15672"
-      - "5672:5672"
+      - "5672:5672"   
+
+  microservicoa:
+    image: lcarreiro/microservico-a
+    ports:
+      - 9090:9090
+
+  microservicob:
+    depends_on:
+      - "rabbit"
+    image: lcarreiro/microservico-b
+
+  microservicoc:
+    image: lcarreiro/microservico-c
+    ports:
+      - 9092:9092    
